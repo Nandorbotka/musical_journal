@@ -1,8 +1,9 @@
-import { Button } from "flowbite-react";
 import React from "react";
 import vinylImg from "../assets/vinyl.png";
 import vinylStack from "../assets/vinyl-stack.jpg";
 import Header from "./Header";
+import { Link } from "react-router-dom";
+import CreateProfileBtn from "../buttons/CreateProfileBtn";
 
 const LandingPage = () => {
     return (
@@ -34,9 +35,11 @@ const LandingPage = () => {
                         backgroundRepeat: "no-repeat",
                     }}
                 >
-                    <Button className="bg-gradient-to-br from-green-400 to-blue-600 text-white hover:bg-gradient-to-bl focus:ring-green-200 dark:focus:ring-green-800 sm:scale-150 md:scale-200 2xl:w-100 2xl:h-16 2xl:text-2xl">
-                        Create your own music journal.
-                    </Button>
+                    <Link to="/create-profile">
+                        <CreateProfileBtn>
+                            Create your own music journal.
+                        </CreateProfileBtn>
+                    </Link>
                 </div>
             </main>
         </>

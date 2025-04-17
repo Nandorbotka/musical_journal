@@ -1,5 +1,6 @@
-import { Button } from "flowbite-react";
 import React from "react";
+import { Link } from "react-router-dom";
+import LoginBtn from "../buttons/LoginBtn";
 
 const Header = () => {
     return (
@@ -7,9 +8,9 @@ const Header = () => {
             <h1 className="font-semibold sm:text-2xl md:text-4xl xl:text-5xl 2xl:text-7xl">
                 🎵Music Journal
             </h1>
-            <Button className="bg-gradient-to-br from-green-400 to-blue-600 text-white hover:bg-gradient-to-bl focus:ring-green-200 dark:focus:ring-green-800 sm:scale-125 md:scale-150 xl:scale-200 2xl:w-32 2xl:h-14 2xl:text-2xl">
-                Login
-            </Button>
+            <Link to="/login">
+                <LoginBtn>Login</LoginBtn>
+            </Link>
         </nav>
     );
 };
