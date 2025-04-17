@@ -8,7 +8,7 @@ import CreateProfileBtn from "../buttons/CreateProfileBtn";
 const LandingPage = () => {
     return (
         <>
-            <Header />
+            <Header btnLabel="Login" />
             <main className="h-[90vh] w-full flex flex-col justify-between lg:flex-row">
                 <div className="flex flex-col items-center mt-16 gap-7 w-full lg:pt-14 xl:pt-32 xl:gap-10 2xl:gap-16 2xl:pt-54">
                     <h1 className="text-3xl font-bold text-center sm:text-5xl md:text-7xl lg:text-5xl xl:text-7xl 2xl:text-9xl">
